@@ -1,11 +1,11 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const path = require("path");
-const dotenv = require("dotenv");
-const productRouter = require("./routes/productRouter.js");
-const userRouter = require("./routes/userRouter.js");
-const orderRouter = require("./routes/orderRouter.js");
-const uploadRouter = require("./routes/uploadRouter.js");
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import path from 'path';
+import productRouter from './routes/productRouter.js';
+import userRouter from './routes/userRouter.js';
+import orderRouter from './routes/orderRouter.js';
+import uploadRouter from './routes/uploadRouter.js';
 
 dotenv.config();
 
@@ -38,7 +38,7 @@ app.use((err, req, res, next) => {
 });
 
 const port = process.env.PORT || 5000;
-app.set("port", port);
+app.set("port", port)
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);
 });
