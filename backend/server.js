@@ -1,12 +1,12 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import path from 'path';
 import productRouter from './routes/productRouter.js';
 import userRouter from './routes/userRouter.js';
 import orderRouter from './routes/orderRouter.js';
 import uploadRouter from './routes/uploadRouter.js';
 
 const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
