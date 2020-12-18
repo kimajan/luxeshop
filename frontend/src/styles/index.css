@@ -232,6 +232,10 @@ img.large {
 .card-body > * {
   margin-bottom: 0.5rem;
 }
+.card h2:hover {
+  background-color: #ecdc82;
+  color: #ffffff;
+}
 .price {
   font-size: 2rem;
 }

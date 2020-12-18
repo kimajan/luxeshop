@@ -2,8 +2,8 @@
   "name": "luxeshop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "dependencies": {
     "aws-sdk": "^2.702.0",
     "bcryptjs": "^2.4.3",
